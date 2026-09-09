@@ -1,0 +1,19 @@
+{
+  "schema_version": 4,
+  "service_name": "react-email",
+  "service_path": "packages/react-email",
+  "runtime": "nodejs",
+  "framework": null,
+  "workload_type": "one_off_job",
+  "workload_evidence": {
+    "location": "packages/react-email/package.json:9",
+    "why": "script named \"export\" runs `email export --outDir ...`, indicating a build-time or generation task that runs once and exits"
+  },
+  "env_vars": [],
+  "entrypoint": {
+    "command": "email export --outDir ../../backend/app/email-templates",
+    "target_file": "node_modules/.bin/email",
+    "location": "packages/react-email/package.json:9"
+  },
+  "bundle_hash": "c6cae336a5d71e5c7d82557a780a6a09a882515e36759bae332ee7b25b628d6e"
+}
