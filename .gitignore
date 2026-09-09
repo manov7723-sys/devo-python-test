@@ -6,3 +6,15 @@ backend/app/frontend/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+.env
+.env.local
+.env.*.local
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.pid
+node_modules/
+dist/
+build/
+coverage/
